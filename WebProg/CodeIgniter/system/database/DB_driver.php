@@ -64,28 +64,28 @@ abstract class CI_DB_driver {
 	 *
 	 * @var	string
 	 */
-	public $username;
+	public $username;		
 
 	/**
 	 * Password
 	 *
 	 * @var	string
 	 */
-	public $password;
+	public $password;		
 
 	/**
 	 * Hostname
 	 *
 	 * @var	string
 	 */
-	public $hostname;
+	public $hostname;		
 
 	/**
 	 * Database name
 	 *
 	 * @var	string
 	 */
-	public $database;
+	public $database;	
 
 	/**
 	 * Database driver

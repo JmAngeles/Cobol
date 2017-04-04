@@ -34,12 +34,17 @@ class News_model extends CI_Model {
     {
         $this->load->helper('url');
  
-        $slug = url_title($this->input->post('title'), 'dash', TRUE);
+        $slug = url_title($this->input->post('CompleteName'), 'dash', TRUE);
  
         $data = array(
-            'title' => $this->input->post('title'),
             'slug' => $slug,
-            'text' => $this->input->post('text')
+			'CompleteName' => $this->input->post('CompleteName'),
+			'Nickname' => $this->input->post('Nickname'),
+			'Email' => $this->input->post('Email'),
+			'HomeAddress' => $this->input->post('HomeAddress'),
+			'gender' => $this->input->post('gender'),
+			'CellphoneNumber' => $this->input->post('CellphoneNumber'),
+			'comments' => $this->input->post('comments')
         );
         
         if ($id == 0) {
